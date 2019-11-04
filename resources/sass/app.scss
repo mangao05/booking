@@ -1,0 +1,624 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+// Variables
+@import 'variables';
+$fa-font-path:"../webfonts";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~admin-lte/dist/css/adminlte.css';
+@import '~bootstrap4-fullscreen-modal/dist/bootstrap4-modal-fullscreen.min.css';
+@import '~aos/dist/aos.css';
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+@import '~fullcalendar/dist/fullcalendar.css';
+
+
+// .navbar-laravel {
+//     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+// }
+
+.router-link-exact-active{
+  background-color: black;
+  color: #fff !important;
+}
+
+.box-shadow{
+    // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+        font-weight: bold;
+        position: absolute;
+        // background-color: #fff;
+        z-index: 9999;
+        width: 100%;
+        
+        // background-image: url('/img/sample.png');
+        // background-position: center;
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // box-shadow: 0px 0px 2px white;
+      
+}
+
+.test{
+    border-bottom-right-radius: 700px;
+}
+
+
+
+
+
+.parallax {
+    /* The image used */
+    background-image: url('/img/img4.jpg');
+  
+    /* Full height */
+    height: auto; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1000px) {
+    .box-shadow{
+        // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08) !important;
+        font-weight: bold !important;
+        position: fixed; 
+        background-color: rgb(102, 51, 153);
+    }
+
+    .logo{
+        width: 100px !important;
+    }
+
+    .fontCarousel{
+        color: #fff;
+        text-shadow: 1px 2px black;
+        font-size: 20px;
+    }    
+
+}
+
+.fontCarousel{
+    color: #fff;
+    text-shadow: 1px 2px black;
+}
+
+.roomLabel{
+    // background-color: rgba(78, 13, 74, 0.9);
+    // background: linear-gradient(to top, white 0%,rgba(78, 13, 74, 0.9) 100%);
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 55px !important;
+    
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 37%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+  }
+
+.divider{
+    height: 7px;
+    background-color: rgb(78, 13, 74)
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: violet;
+  text-shadow: 0px 1px black;
+  
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    text-transform: uppercase;
+  }
+
+
+
+.sampleRoomContainer{
+    background-color: rgba(0, 0, 0, 0.04)
+}
+
+
+
+  
+  .text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+   
+  }
+
+  .sample{
+    background-image: url('/img/img1.jpeg'); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .carousel-item:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 0.4;
+}
+
+.bookingSection{
+  box-shadow:0px 0px 5px  black;
+  position: relative;
+  // background-color: white;
+  width:70%;
+  top: 70px;
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+
+
+.btnColor{
+  background-color: #AC68CC;
+  color: white !important;
+  width: 150px;
+}
+
+.btnColor:hover{
+  background-color: #9744BE;
+}
+
+
+
+.roomImg1{
+  margin-top:30%;
+  position:relative;
+  transition: transform .2s;
+  right:50px;
+  box-shadow: 0px 0px 5px black;
+}
+
+.roomImg2{
+  position:relative;
+  top:-100px;
+  transition: transform .2s;
+  left:70px;
+  box-shadow: 0px 0px 5px black;
+}
+
+.roomImg3{
+  position:absolute;
+  right:70px;
+  transition: transform .2s;
+  top:220px;
+  box-shadow: 0px 0px 5px black;
+}
+
+.roomImg1:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  box-shadow: 0px 2px 5px black;
+  z-index: 9999 !important;
+}
+
+.roomImg2:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  box-shadow: 0px 2px 5px black;
+  z-index: 9999 !important;
+}
+
+.roomImg3:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  box-shadow: 0px 2px 5px black;
+  z-index: 9999 !important;
+}
+
+
+
+.historyFormat{
+  text-align: justify;
+  font-size:20px;
+}
+
+.container {
+  position: relative !important;
+  
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.background{
+    // background-image: url('/img/img7.jpg');
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    background-color: #E1DDEC;
+}
+
+// .nights{
+//   font-weight: bold !important;
+//   font-size: 20px;
+//   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+// }
+
+.textboxField{
+  border: none;
+  font-size:20px;
+  font-style:italic;
+  color:#660066 !important;
+  background-color: transparent !important;
+  font-weight: bold;
+}
+
+.linkformat{
+  text-decoration: none;
+  color:white;
+}
+
+.linkformat:hover {
+  text-decoration: none;
+  color:white;
+}
+
+.footerLink{
+  text-decoration: none !important;
+  color: #660066;
+  font-weight: bold;
+}
+
+.footerLink:hover {
+  text-decoration: none !important;
+  color: #660066;
+  font-weight: bold;
+}
+
+.imageRoom{
+  width: 100%;
+	clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+  
+  // border:solid black;
+}
+
+.descriptionRoom{
+  width: 100%;
+  
+  // border:solid black;
+}
+
+.divRoom{
+  background-image: url('/img/img16.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+.slogan{
+  font-weight: bold;
+  font-style: italic;
+  color: #660066;
+}
+
+
+
+// mobile view 
+@media only screen and (max-width: 990px) {
+  .slogan{
+    font-size: 15px;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+
+  .carousel{
+    margin-top: 90px;
+  }
+
+  .imgsizeMobile{
+    width:200px !important;
+  }
+
+  .roomImg1{
+    margin-top:30%;
+    position:relative;
+    transition: transform .2s;
+    right:50px;
+    box-shadow: 0px 0px 5px black;
+  }
+  
+  .roomImg2{
+    position:relative;
+    top:-80px;
+    transition: transform .2s;
+    left:50px;
+    box-shadow: 0px 0px 5px black;
+  }
+  
+  .roomImg3{
+    position:absolute;
+    right:20px;
+    transition: transform .2s;
+    top:150px;
+    box-shadow: 0px 0px 5px black;
+  }
+  
+  .roomImg1:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+    box-shadow: 0px 2px 5px black;
+    z-index: 9999 !important;
+  }
+  
+  .roomImg2:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+    box-shadow: 0px 2px 5px black;
+    z-index: 9999 !important;
+  }
+  
+  .roomImg3:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+    box-shadow: 0px 2px 5px black;
+    z-index: 9999 !important;
+  }
+
+  .historyFormat{
+    text-align: justify;
+    font-size:15px;
+  }
+
+}
+
+.headerRoomSample{
+  font-size:20px;
+  color:white;
+}
+
+.contentDesign{
+  display: block;
+  position: relative;
+}
+
+.contentDesign::after{
+  content: "";
+  background-image: url('/img/sampleLogo.png');
+  background-position: center,center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+ervin added css
+
+.bg-HW_violet{
+  background-color:rgb(102, 51, 153);
+  color: white;
+}
+.btn-Event{
+  float:right;background-color: rgb(225, 153, 51);color:white;border:none; text-transform:uppercase;
+}
+.havendwell-room-text{
+  padding-top:5%;padding-left:5%;padding-right: 25%;font-size: 18px;
+}
+
+#eventCorporate, #eventWedding{
+
+  padding: 2% 5% 0;
+}
+
+.aboutCont{
+  padding: 2% 5% 0;
+}
+.aboutCont p{
+  font-size: 18px;
+  line-height: 1em;
+}
+#eventCorporate p, li{
+  font-size:18px;
+  line-height: 1em;
+}
+
+#eventWedding p{
+  font-size: 18px;
+  line-height: 1em;
+}
+
+.roomOverlay{
+  top:200px;background: rgba(0,0,0,0.3);
+}
+
+@media only screen and (min-width:200px) and (max-width:499px) {
+  .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .navbar-link:focus{
+    color:whitesmoke;
+    text-shadow: 0px 1px black;
+  }
+  .logo{
+    left: 0 !important;
+  }
+  .navCont{
+    background-color: rgb(102, 51, 153);
+  }
+
+  .navCont ul{
+    margin-top:30px !important;
+  }
+  .navbar-toggler{
+    color:white !important;
+    border:solid 1px white !important;
+  }
+  #order-one{order:1;}
+  #order-two{order:3; padding-bottom:10px !important;}
+  #order-three{order:2;}
+  #order-four{order:4;}
+
+  #order-one button, #order-three button{
+    font-size:12px;width: 70% !important;
+  }
+  #order-one .card-img-overlay, #order-three .card-img-overlay{
+    top:50% !important;
+    padding: 0;
+  }
+  #order-two button{
+    font-size: 12px;width: 50% !important;margin: 0 auto;display: block;
+  }
+  .havendwell-room-text{
+    padding: 5% 3% 0 !important;
+  }
+  #order-two p{
+    font-size: 13px;
+    padding: 5px 15px 0;
+  }
+  #order-two li{
+    font-size:13px;
+  }
+  #eventCorporate, #eventWedding{
+    padding:15px;
+    height: auto !important;
+  }
+  #eventCorporate p, li{
+    width: auto;
+    font-size:13px;
+    line-height: 1.2em;
+  }
+  #eventCorporate button, #eventWedding button{
+    width:65% !important;margin: 0 auto 10px !important;display: block;float:none !important;font-size: 12px;
+  }
+  #eventWedding img, #eventCorporate img{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #eventWedding .container{
+    margin-top: 0 !important;
+  }
+
+
+  .eventCont img{
+    width:100% !important;
+    padding-top:10px !important;
+    padding-bottom: 5px !important;
+  }
+  #eventWedding p{
+    width: auto;
+    font-size: 13px;
+    line-height: 1.2em;
+  }
+  .mobileDesign1{
+    background-color:transparent !important;
+  }
+  .mobileDesign2{
+    display: none !important;
+
+  }
+  .headingText{
+    padding-left: 0 !important;
+    text-align: center !important;
+  }
+  .aboutCont p{
+    font-size: 15px;
+  }
+  #readMore{
+    display:inline !important;
+  }
+  #showReadmore1, #showReadmore2{
+    display: none;
+  }
+
+ 
+  // room datails
+
+  .roomDetails{
+    border-right: none !important;
+    border-bottom: solid 1px #E1D8CF !important;
+  }
+
+  .calendar-container{
+    width: 100% !important;
+    right: 0% !important;
+  }
+}
+
+@media only screen and (min-width:500px) and (max-width:900px){
+  .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .navbar-link:focus{
+    color:gray;
+    text-shadow: 0px 1px black;
+  }
+
+  .logo{
+    left: 0 !important;
+  }
+  .navCont{
+    background-color: rgb(102, 51, 153);
+    
+  }
+  .calendar-container{
+    width: 100% !important;
+    right: 0% !important;
+  }
+}
+
+.fc-unthemed td.fc-today {
+  background:#6CB2EB !important;
+  }
+
+
